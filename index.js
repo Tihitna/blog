@@ -11,6 +11,20 @@ app.get('/', (req,res)=>{
 app.get('/about', (req,res)=>{
     res.render("about")
 });
+app.get('/contact', (req,res)=>{
+    res.render("contact")
+});
+app.get('/blog', (req,res)=>{
+    res.render("blog", { news: data })
+});
+app.get('/blog_form', (req,res)=>{
+    res.render("blog_form")
+});
+app.get('/blog_details/:id', (req,res)=>{
+    const id = req.params.id
+   const news = data.articles[id];
+    res.render("blog_details", {news})
+});
 app.listen(port, ()=>{
     console.log("Connected");
 })

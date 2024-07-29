@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partitions/header.ejs') %>
+    <%- include('./partitions/header2.ejs') %>
+<body>
+    <%- include('./partitions/navbar.ejs') %>
+    <div class="blog-form">
+        <form action="">
+            <h2>Add New Blog</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="">Author</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <label for="">Title</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <label for="">Image</label>
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col">
+                    <div class="input-group">
+                        <label for="">Content</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <label for="">Description</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <button>Add Blog</button>
+    
+        </form>
+    </div>
+
+    <%- include('./partitions/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.details{
+    margin: 0 170px;
+}
+.details h2{
+    color:rgba(30, 30, 30, 0.745)
+}
+.details .row{
+    display: flex;
+    gap:5rem;
+    margin-bottom: 3%;
+}
+.details .row img{
+    width: 500px;
+    border-radius: 10px;
+}
+.details .row .col h2{
+    margin-top: 30px;
+    color:rgba(30, 30, 30, 0.745)
+}
+.details .row .col strong{
+    color:rgba(30, 30, 30, 0.745)
+}
+.details hr{
+    margin: 3% 0;
+}
+.details p{
+    margin-bottom: 3%;
+    line-height: 25px;
+}
+.details h4{
+    font-size: 18px;
+    color:rgba(30, 30, 30, 0.745)
+}
+form{
+    padding: 0 170px;
+}
+form h2{
+    text-align: center;
+}
+form .row{
+    display: flex;
+    gap: 10px;
+}
+form .row .col .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form .row .col .input-group input{
+    width: 200px;
+    padding: 5px 20px;
+}
+.blog-form{
+    margin: auto;
+}

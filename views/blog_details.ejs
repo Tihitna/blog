@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partitions/header.ejs') %>
+    <%- include('./partitions/header2.ejs') %>
+<body>
+    <%- include('./partitions/navbar.ejs') %>
+   
+    <div class="details">
+        <h2>Blog</h2>
+        <div class="row">
+            <div class="col">
+                <img src=<%= news.urlToImage %> alt="">
+            </div>
+            <div class="col">
+                <h2><%= news.title %></h2>
+                <p>
+                   <strong>Author: </strong>  <%= news.author %>
+                </p>
+                <p><strong>Published Date: </strong>  <%= news.publishedAt %></p>
+                <h4>Description</h4>
+                <p> <%= news.description %> </p>
+            </div>
+        </div>
+        <hr>
+        <p>
+            <%= news.content %>
+        </p>
+    </div>
+    <%- include('./partitions/footer.ejs') %>
+</body>
+</html>
